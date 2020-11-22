@@ -46,11 +46,23 @@
   }
   .carousel .slick-dots {
     display: flex;
-    width: 40%;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 52px;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      margin: 0 10px;
+      button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #c70101;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    }
+  }
+  .carousel .slick-dots li.slick-active button {
+    background-color: red;
   }
 }
 @media (max-width: 767px) {
